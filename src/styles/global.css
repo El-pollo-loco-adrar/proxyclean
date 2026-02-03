@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  /* Injection de tes couleurs spécifiques */
+    --color-primaryTheme: #003A9A;
+    --color-secondaryTheme: #1DAAED;
+    --color-theme: #052A6E;
+    --color-title: #06296D;
+
+  /* Ajustement pour daisyUI v4 */
+    --primary: #003A9A;
+    --secondary: #1DAAED;
+    --accent: var(--color-theme);
+}

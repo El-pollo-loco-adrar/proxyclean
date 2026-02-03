@@ -41,6 +41,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 Mise en place du formulaire de contact
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. https://formspree.io/
+2. Création du compte avec l'adresse contact@proxiclean-services.fr
+3. Crée un "New Form" et appelle-le "Contact ProxiClean".
+4. Formspree va te donner une URL qui ressemble à : https://formspree.io/f/xyza123.
+5. Remplace simplement https://formspree.io/f/VOTRE_ID_ICI dans mon code par cette URL. LIGNE 25

@@ -1,0 +1,114 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Contactez Proxi'Clean | Devis Gratuit" description="Besoin d'un nettoyage de bureaux ou d'une remise en état à Toulouse ou en Occitanie ? Demandez votre devis gratuit en ligne.">
+    <section class="py-12 bg-theme text-white text-center">
+        <h1 class="text-4xl font-bold uppercase tracking-widest">Contactez Proxi'Clean</h1>
+        <p class="mt-2 text-blue-100">Demandez votre devis gratuit en quelques clics</p>
+    </section>
+
+    <section class="py-24 bg-gray-50 px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+            <div class="bg-[#003A9A] p-10 text-white md:w-1/3 flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-4">Un besoin ?</h2>
+                <p class="text-blue-100">N'hésitez pas à nous contacter via le formulaire</p>
+                
+                <div class="mt-8 space-y-4 text-sm">
+                <p class="flex items-center gap-2">📧 contact@proxiclean-services.fr</p>
+                <p class="flex items-center gap-2">📞 09 50 28 76 92</p>
+                </div> 
+            </div>
+            
+            <form
+                id="contact-form"
+                class="p-10 flex-1 grid grid-cols-1 gap-4"
+                name="contact-proxi-clean"
+                method="POST"
+                action="https://formspree.io/f/ID_ICI"
+                >
+                <select 
+                    name="objet-demande" 
+                    class="select select-bordered w-full focus:outline-secondaryTheme" 
+                    required
+                >
+                    <option disabled selected value="">Objet de votre demande</option>
+                    <option value="devis">Demande de devis</option>
+                    <option value="information">Demande d'information</option>
+                    <option value="reclamation">Réclamation</option>
+                    <option value="autre">Autre...</option>
+                </select>
+
+                <input 
+                    name="nom"
+                    type="text" 
+                    placeholder="Nom ou Entreprise" 
+                    class="input input-bordered w-full focus:outline-secondaryTheme"
+                    required
+                />
+                <input 
+                    name="email"
+                    type="email" 
+                    placeholder="Email" 
+                    class="input input-bordered w-full focus:outline-secondaryTheme" 
+                    required
+                />
+                <textarea 
+                    name="message"
+                    placeholder="Votre message..." 
+                    class="textarea textarea-bordered h-32 focus:outline-secondaryTheme"
+                    required
+                ></textarea>
+
+                <button id="submit-btn" type="submit" class="btn bg-title text-white border-none hover:bg-[#003A9A]">Envoyer le message</button>
+            </form>
+
+            <div 
+                id="toast" 
+                class="hidden fixed bottom-5 right-5 bg-green-600 text-white px-6 py-4 rounded-xl shadow-2xl z-50 transition-all duration-300 transform translate-y-10">
+                ✅ Message envoyé avec succès !
+            </div>
+
+        </div>
+    </section>
+
+    <script is:inline>
+        const form = document.getElementById('contact-form');
+        const toast = document.getElementById('toast');
+        const btn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Empêche la redirection
+            
+            btn.disabled = true;
+            btn.innerText = "Envoi en cours...";
+
+            const data = new FormData(form);
+            
+            try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                // Afficher le pop-up
+                toast.classList.remove('hidden', 'translate-y-10');
+                form.reset(); // Vide le formulaire
+                
+                // Cacher le pop-up après 5 secondes
+                setTimeout(() => {
+                toast.classList.add('hidden', 'translate-y-10');
+                }, 5000);
+            } else {
+                alert("Oups ! Un problème est survenu. Veuillez réessayer.");
+            }
+            } catch (error) {
+            alert("Erreur de connexion. Vérifiez votre réseau.");
+            } finally {
+            btn.disabled = false;
+            btn.innerText = "Envoyer le message";
+            }
+        });
+    </script>
+</Layout>

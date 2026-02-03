@@ -1,0 +1,9 @@
+# Autoriser tous les robots à indexer le site
+User-agent: *
+Allow: /
+
+# Indiquer l'emplacement du plan du site (Sitemap)
+Sitemap: https://www.proxiclean-services.fr/sitemap-index.xml
+
+# Empêcher l'indexation des fichiers système (optionnel pour Astro)
+Disallow: /_astro/

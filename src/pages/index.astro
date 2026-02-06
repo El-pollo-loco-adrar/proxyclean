@@ -21,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 
 			<div class="flex-1 flex justify-center md:justify-end">
-				<div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl transition-transform duration-300 hover:scale-105 cursor-default">
+				<div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl over:scale-105 cursor-default">
 					<img src="/logo2.png" alt="logo" class="w-40 md:w-58 h-auto object-contain">
 				</div>
 			</div>
@@ -32,11 +32,11 @@ import Layout from '../layouts/Layout.astro';
 		<div class="max-w-4xl mx-auto text-center ">
 			<h2 class="text-3xl font-bold text-theme uppercase tracking-wider">Qui sommes-nous ?</h2>
 			<div class="w-20 h-1.5 bg-secondaryTheme mx-auto mt-4 mb-12"></div>
-			<h3 class="text-secondaryTheme text-lg font-semibold mb-4">
+			<h3 class="text-lg font-semibold mb-4">
 				Une vision moderne des services de nettoyage.
 			</h3>
 			<div class="text-gray-700 space-y-4">
-				<p>Proxi'clean, accompagne les professionnels avec une exigence élevée de qualité, de fiabilité et de réactivité.</p>
+				<p>Proxi'clean services, accompagne les professionnels avec une exigence élevée de qualité, de fiabilité et de réactivité.</p>
 				<p>Notre approche repose sur une organisation claire, des équipes spécialisées et une parfaite maitrise des environnements techniques.</p>
 				<p>Chaque prestation est conçue comme une solution sur meseure, adaptée aux contraintes réelles de nos clients, avec un objectif constant : </p>
 				<p class="font-bold">Proposer un service différent.</p>
@@ -44,14 +44,15 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<section id="vision" class="bg-white m-16">
+	<section id="vision" class="bg-primaryTheme mt-16 p-12">
 		<div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-theme uppercase tracking-wider">Notre vision</h2>
+            <h2 class="text-3xl font-bold text-white uppercase tracking-wider">Notre vision</h2>
             <div class="w-20 h-1.5 bg-secondaryTheme mx-auto mt-4 mb-12"></div>
-            <h3 class="text-lg font-semibold text-secondaryTheme mb-4">Les 5 piliers Proxi'Clean</h3>
+			
+            <h3 class="text-lg text-white font-semibold mb-8">Les 5 piliers <span class="uppercase">Proxi'Clean services</span></h3>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme transition-transform duration-300 hover:scale-105 cursor-default">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme ursor-default">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4a2 2 0 012 2v1a2 2 0 01-2 2h-1c-1.767 0-3 1.333-3 3V19a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h1.382a1 1 0 00.894-.553l1.448-2.895A1 1 0 0110.618 3H12v7" />
@@ -61,7 +62,7 @@ import Layout from '../layouts/Layout.astro';
                     <p class="text-sm text-gray-500 mt-2">Des agents formés, encadrés et suivis.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme transition-transform duration-300 hover:scale-105 cursor-default">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5" />
@@ -71,7 +72,7 @@ import Layout from '../layouts/Layout.astro';
                     <p class="text-sm text-gray-500 mt-2">Une organisation structurée, des engagements écrits, des procédures maîtrisées du début à la fin.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme transition-transform duration-300 hover:scale-105 cursor-default">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -81,7 +82,7 @@ import Layout from '../layouts/Layout.astro';
                     <p class="text-sm text-gray-500 mt-2">Vos contraintes, votre réalité terrain, vos priorités. Chaque prestation s'adapte à votre site.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme transition-transform duration-300 hover:scale-105 cursor-default">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -91,7 +92,7 @@ import Layout from '../layouts/Layout.astro';
                     <p class="text-sm text-gray-500 mt-2">Des fournisseurs fiables et réactifs, des solutions adaptées et une continuité de service assurée.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme transition-transform duration-300 hover:scale-105 cursor-default">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01m-.01 4h.01" />
@@ -101,85 +102,85 @@ import Layout from '../layouts/Layout.astro';
                     <p class="text-sm text-gray-500 mt-2">La propreté pilotée et transparente : suivi des prestations, contrôles qualité tracés, indicateurs partagés.</p>
                 </div>
             </div>
-			<p class="text-lg font-semibold text-secondaryTheme mt-8">Notre méthode pour une propreté maîtrisée</p>
+			<p class="text-lg text-white font-semibold mt-8">Notre méthode pour une propreté maîtrisée</p>
         </div>
 	</section>
 
-	<section id="services" class="bg-white m-8">
+	<section id="services" class="bg-white m-16">
 		<div class="max-w-6xl mx-auto text-center">
 		<h2 class="text-3xl font-bold text-theme uppercase tracking-wider">Nos Solutions</h2>
 		<div class="w-20 h-1.5 bg-secondaryTheme mx-auto mt-4 mb-12"></div>
 		
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-			<div class="p-8 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow border-t-4 border-t-primaryTheme transition-transform duration-300 hover:scale-105 cursor-default">
-			<div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 mx-auto">
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-secondaryTheme" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 16l2 2 4-4" />
-				</svg>
-			</div>
-			<h3 class="text-xl font-bold text-gray-800 mb-3">Entretien régulier</h3>
-				<ul class="text-gray-600 space-y-2">
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Industrie
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Logistique
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Tertiaire
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Grande distribution
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Data center
-					</li>
-				</ul>
-			</div>
-
-			<div class="p-8 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow border-t-4 border-t-primaryTheme transition-transform duration-300 hover:scale-105 cursor-default">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div class="p-8 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow border-t-4 border-t-primaryTheme cursor-default">
 				<div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 mx-auto">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-secondaryTheme" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.618.309a2 2 0 01-1.789 0l-.618-.309a6 6 0 00-3.86-.517l-2.387.477a2 2 0 00-1.022.547l-1.16 1.16a2 2 0 00.442 3.066L3 21h18l-.574-.506a2 2 0 00.442-3.066l-1.16-1.16z" />
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11V3m0 0L9 6m3-3l3 3" />
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 16l2 2 4-4" />
 					</svg>
-				</div> 
-				<h3 class="text-xl font-bold text-gray-800 mb-3">Prestations spécifiques</h3>
-				<ul class="text-gray-600 space-y-2">
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Remise en état après travaux
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Nettoyage post mortem
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Nettoyage Diogène
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Nettoyage panneau solaire
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Nettoyage vitrerie toute hauteur
-					</li>
-					<li class="flex items-center gap-2">
-						<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-						Lutte contre les nuisibles
-					</li>
-				</ul>
-			</div>
+				</div>
+				<h3 class="text-xl font-bold text-gray-800 mb-3">Entretien régulier</h3>
+					<ul class="text-gray-600 space-y-2 pl-16">
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Industrie
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Logistique
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Tertiaire
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Grande distribution
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Data center
+						</li>
+					</ul>
+				</div>
 
-		</div>
+				<div class="p-8 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow border-t-4 border-t-primaryTheme ursor-default">
+					<div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-secondaryTheme" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.618.309a2 2 0 01-1.789 0l-.618-.309a6 6 0 00-3.86-.517l-2.387.477a2 2 0 00-1.022.547l-1.16 1.16a2 2 0 00.442 3.066L3 21h18l-.574-.506a2 2 0 00.442-3.066l-1.16-1.16z" />
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11V3m0 0L9 6m3-3l3 3" />
+						</svg>
+					</div> 
+					<h3 class="text-xl font-bold text-gray-800 mb-3">Prestations spécifiques</h3>
+					<ul class="text-gray-600 space-y-2 pl-16">
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Remise en état après travaux
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Nettoyage post mortem
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Nettoyage Diogène
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Nettoyage panneau solaire
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Nettoyage vitrerie toute hauteur
+						</li>
+						<li class="flex items-center gap-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
+							Lutte contre les nuisibles
+						</li>
+					</ul>
+				</div>
+
+			</div>
 		</div>
 	</section>
 </Layout>

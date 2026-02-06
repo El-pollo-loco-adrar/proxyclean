@@ -48,3 +48,7 @@ All commands are run from the root of the project, from a terminal:
 3. Crée un "New Form" et appelle-le "Contact ProxiClean".
 4. Formspree va te donner une URL qui ressemble à : https://formspree.io/f/xyza123.
 5. Remplace simplement https://formspree.io/f/VOTRE_ID_ICI dans mon code par cette URL. LIGNE 25
+
+
+## Lignes à modifier
+1. astro.config.mjs : ligne 16: mettre le bon lien du site

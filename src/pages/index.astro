@@ -11,7 +11,7 @@ import Layout from '../layouts/Layout.astro';
 					Le service<br/> <span class="text-secondaryTheme">autrement</span>
 				</h1>
 				<p class="mt-6 text-blue-100 text-lg max-w-lg">
-					Solution de propreté, prestations techniques et services associés pour environnements exigeants.
+					Solutions de propreté, prestations techniques et services associés pour environnements exigeants.
 				</p>
 				<!-- <div class="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
 					<a href="/contact" class="btn bg-[#003A9A] hover:bg-[#052A6E] text-white border-none px-8">
@@ -59,7 +59,8 @@ import Layout from '../layouts/Layout.astro';
                         </svg>
                     </div>
                     <h3 class="font-bold text-theme leading-tight">Votre coup de pouce</h3>
-                    <p class="text-sm text-gray-500 mt-2">Des agents formés, encadrés et suivis.</p>
+                    <p class="text-sm text-gray-500 mt-2">Des agents formés et encadrés, des consignes claires, des contrôles réguliers.</p>
+					<p class="text-sm text-gray-700 font-semibold mt-2"> Vous gagnez du temps. Nous sécurisons votre niveau de propreté.</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default">
@@ -69,7 +70,8 @@ import Layout from '../layouts/Layout.astro';
                         </svg>
                     </div>
                     <h3 class="font-bold text-theme leading-tight">Une direction claire</h3>
-                    <p class="text-sm text-gray-500 mt-2">Une organisation structurée, des engagements écrits, des procédures maîtrisées du début à la fin.</p>
+                    <p class="text-sm text-gray-500 mt-2">Une organisation structurée, des engagements écrits et des procédures claires.</p>
+					<p class="text-sm text-gray-700 font-semibold mt-2">Des prestations maîtrisées</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default">
@@ -79,7 +81,9 @@ import Layout from '../layouts/Layout.astro';
                         </svg>
                     </div>
                     <h3 class="font-bold text-theme leading-tight">Votre satisfaction</h3>
-                    <p class="text-sm text-gray-500 mt-2">Vos contraintes, votre réalité terrain, vos priorités. Chaque prestation s'adapte à votre site.</p>
+                    <p class="text-sm text-gray-500 mt-2">Vos contraintes, votre réalité terrain, vos priorités.</p>
+					<p class="text-sm text-gray-700 font-semibold mt-4">Chaque prestation s'adapte à votre site.</p>
+
                 </div>
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default">
@@ -89,7 +93,9 @@ import Layout from '../layouts/Layout.astro';
                         </svg>
                     </div>
                     <h3 class="font-bold text-theme leading-tight">Des partenaires engagés</h3>
-                    <p class="text-sm text-gray-500 mt-2">Des fournisseurs fiables et réactifs, des solutions adaptées et une continuité de service assurée.</p>
+                    <p class="text-sm text-gray-500 mt-2">Des fournisseurs fiables et réactifs, des solutions adaptées.</p>
+					<br>
+					<p class="text-sm text-gray-700 font-semibold mt-2">Une continuité de service assurée.</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default">
@@ -99,10 +105,11 @@ import Layout from '../layouts/Layout.astro';
                         </svg>
                     </div>
                     <h3 class="font-bold text-theme leading-tight">Le suivi et traçabilité</h3>
-                    <p class="text-sm text-gray-500 mt-2">La propreté pilotée et transparente : suivi des prestations, contrôles qualité tracés, indicateurs partagés.</p>
+                    <p class="text-sm text-gray-500 mt-2">Suivi des prestations, contrôles qualité tracés, indicateurs partagés.</p>
+					<p class="text-sm text-gray-700 font-semibold mt-4">Une propreté mesurée, des performances suivies et la garantie d’un service conforme à vos attentes.</p>
                 </div>
             </div>
-			<p class="text-lg text-white font-semibold mt-8">Notre méthode pour une propreté maîtrisée</p>
+			<!-- <p class="text-lg text-white font-semibold mt-8">Notre méthode pour une propreté maîtrisée</p> -->
         </div>
 	</section>
 
@@ -121,25 +128,39 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 				<h3 class="text-xl font-bold text-gray-800 mb-3">Entretien régulier</h3>
 					<ul class="text-gray-600 space-y-2 pl-16">
-						<li class="flex items-center gap-2">
-							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Industrie
+						<li class="flex items-center gap-3">
+							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme shrink-0"></span>
+							<a href="/entretien" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Industrie
+							</a>
 						</li>
+
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Logistique
+							<a href="/entretien" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Logistique
+							</a>
 						</li>
+						
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Tertiaire
+							<a href="/entretien" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Tertiaire
+							</a>
 						</li>
+						
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Grande distribution
+							<a href="/entretien" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Grande distribution
+							</a>	
 						</li>
+						
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Data center
+							<a href="/entretien" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Data center
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -155,27 +176,39 @@ import Layout from '../layouts/Layout.astro';
 					<ul class="text-gray-600 space-y-2 pl-16">
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Remise en état après travaux
+							<a href="/specifique" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Remise en état après travaux
+							</a>
 						</li>
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Nettoyage post mortem
+							<a href="/specifique" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Nettoyage post mortem
+							</a>
 						</li>
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Nettoyage Diogène
+							<a href="/specifique" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Nettoyage Diogène
+							</a>
 						</li>
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Nettoyage panneau solaire
+							<a href="/specifique" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Nettoyage panneau solaire
+							</a>
 						</li>
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Nettoyage vitrerie toute hauteur
+							<a href="/specifique" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Nettoyage vitrerie toute hauteur
+							</a>
 						</li>
 						<li class="flex items-center gap-2">
 							<span class="w-1.5 h-1.5 rounded-full bg-secondaryTheme"></span>
-							Lutte contre les nuisibles
+							<a href="/specifique" class="hover:text-secondaryTheme hover:underline transition-colors">
+								Lutte contre les nuisibles
+							</a>
 						</li>
 					</ul>
 				</div>

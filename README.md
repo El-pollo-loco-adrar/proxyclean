@@ -49,6 +49,11 @@ All commands are run from the root of the project, from a terminal:
 4. Formspree va te donner une URL qui ressemble à : https://formspree.io/f/xyza123.
 5. Remplace simplement https://formspree.io/f/VOTRE_ID_ICI dans mon code par cette URL. LIGNE 25
 
+## 👀 Mise en place du formulaire d'envoie de CV
+1. Rends-toi sur web3forms.com.
+2. Saisis ton adresse email professionnelle (ex: contact@proxiclean-services.fr).
+3. Tu vas recevoir immédiatement un mail contenant une Access Key (une suite de chiffres et de lettres). Garde-la précieusement.
+
 
 ## Lignes à modifier
 1. astro.config.mjs : ligne 16: mettre le bon lien du site

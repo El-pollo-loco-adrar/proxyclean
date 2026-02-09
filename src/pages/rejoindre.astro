@@ -1,0 +1,142 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+---
+<Layout title="Rejoindre Proxi'Clean | Envoyez votre CV"
+        description="Vous voulez rejoindre l'entreprise Proxi'Clean services ? N'hésitez pas à nous faire parvenir votre CV.">
+
+    <Breadcrumb currentPage="Rejoignez-nous"></Breadcrumb>
+
+    <section class="py-12 bg-theme text-white text-center">
+        <h1 class="text-4xl font-bold uppercase tracking-widest text-white">Rejoignez Proxi'Clean</h1>
+        <p class="mt-2 text-lg text-white">Envoyez nous votre CV en quelques clics</p>
+    </section>
+
+    <section class="py-20 bg-gray-50 px-6">
+        <div class="max-w-4xl mx-auto bg-white rounded-[2rem] shadow-xl overflow-hidden flex flex-col md:flex-row relative">
+            
+            <div class="bg-primaryTheme p-10 text-white md:w-1/3 flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-4">Travailler chez nous</h2>
+                <p class="text-blue-100 mb-6 font-medium">Nous sommes toujours à la recherche de nouveaux talents rigoureux et motivés.</p>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-center gap-2">✅ CDI / CDD / Temps partiel</li>
+                    <li class="flex items-center gap-2">✅ Équipement de qualité</li>
+                </ul>
+            </div>
+
+            <form 
+                id="recrutement-form"
+                action="https://api.web3forms.com/submit" 
+                method="POST" 
+                enctype="multipart/form-data"
+                class="p-10 flex-1 grid grid-cols-1 gap-5"
+            >
+                <input type="hidden" name="access_key" value="gfxcd37zakb">
+                <input type="hidden" name="front_name" value="Site web Proxi'Clean">
+                <input type="hidden" name="subject" value="Nouvelle candidature Proxi'Clean">
+                <input type="hidden" name="redirect" value="">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="flex flex-col gap-1.5">
+                        <label class="text-sm font-semibold text-gray-700 ml-1">Nom Complet</label>
+                        <input type="text" name="name" required class="input input-bordered focus:outline-secondaryTheme" />
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                        <label class="text-sm font-semibold text-gray-700 ml-1">Téléphone</label>
+                        <input type="tel" name="phone" required class="input input-bordered focus:outline-secondaryTheme" />
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-sm font-semibold text-gray-700 ml-1">Email</label>
+                    <input type="email" name="email" required class="input input-bordered focus:outline-secondaryTheme" />
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-sm font-semibold text-gray-700 ml-1">Votre CV (PDF uniquement)</label>
+                    <input 
+                        id="cv-file"
+                        type="file" 
+                        name="attachment" 
+                        accept=".pdf" 
+                        required 
+                        class="file-input file-input-bordered file-input-primary w-full focus:outline-secondaryTheme"
+                    />
+                    <p class="text-[10px] text-gray-400 italic mt-1">Maximum 5Mo. Format PDF uniquement.</p>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label class="text-sm font-semibold text-gray-700 ml-1">Petit mot pour nous (Optionnel)</label>
+                    <textarea name="message" class="textarea textarea-bordered h-24 focus:outline-secondaryTheme"></textarea>
+                </div>
+
+                <div class="flex items-start gap-2 py-2">
+                    <input type="checkbox" required class="checkbox checkbox-sm checkbox-primary mt-1" />
+                    <span class="text-[10px] text-gray-500 leading-tight">
+                        J'accepte que mes données soient conservées par Proxi'Clean dans le cadre de ma candidature conformément à la politique de confidentialité.
+                    </span>
+                </div>
+
+                <button id="submit-btn" type="submit" class="btn bg-primaryTheme text-white border-none hover:bg-secondaryTheme transition-all">
+                    Envoyer ma candidature
+                </button>
+            </form>
+
+            <div 
+                id="toast" 
+                class="hidden fixed bottom-5 right-5 bg-green-600 text-white px-8 py-5 rounded-2xl shadow-2xl z-50 transition-all duration-300 transform translate-y-10">
+                ✅ Candidature envoyée avec succès !
+            </div>
+        </div>
+    </section>
+
+    <script is:inline>
+        const form = document.getElementById('recrutement-form');
+        const toast = document.getElementById('toast');
+        const btn = document.getElementById('submit-btn');
+        const fileInput = document.getElementById('cv-file');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            btn.disabled = true;
+            btn.innerText = "Envoi en cours...";
+
+            const formData = new FormData(form);
+            // On transforme le FormData en objet pour le transformer en JSON
+            const object = Object.fromEntries(formData);
+            
+            // Note : Pour les fichiers, on doit garder le FormData, 
+            // Web3Forms préfère le FormData brut pour l' "attachment".
+            
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData // On envoie le formData brut pour le CV
+                });
+
+                const json = await response.json();
+
+                if (response.status === 200) {
+                    // SUCCÈS
+                    toast.classList.remove('hidden', 'translate-y-10');
+                    form.reset();
+                    setTimeout(() => {
+                        toast.classList.add('hidden', 'translate-y-10');
+                    }, 5000);
+                } else {
+                    // ERREUR RETOURNÉE PAR L'API
+                    console.log(json);
+                    alert("Erreur : " + json.message);
+                }
+            } catch (error) {
+                // ERREUR RÉSEAU
+                console.log(error);
+                alert("Un problème est survenu lors de l'envoi.");
+            } finally {
+                btn.disabled = false;
+                btn.innerText = "Envoyer ma candidature";
+            }
+        });
+    </script>
+</Layout>

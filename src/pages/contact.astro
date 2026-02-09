@@ -1,7 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
 ---
 <Layout title="Contactez Proxi'Clean | Devis Gratuit" description="Besoin d'un nettoyage de bureaux ou d'une remise en état à Toulouse ou en Occitanie ? Demandez votre devis gratuit en ligne.">
+
+    <Breadcrumb currentPage="Contact"></Breadcrumb>
+    
     <section class="py-12 bg-theme text-white text-center">
         <h1 class="text-4xl font-bold uppercase tracking-widest">Contactez Proxi'Clean</h1>
         <p class="mt-2 text-lg">Demandez votre devis gratuit en quelques clics</p>
@@ -32,7 +36,7 @@ import Layout from "../layouts/Layout.astro";
                 action="https://formspree.io/f/ID_ICI"
             >
                 <div class="space-y-2">
-                    <label class="text-sm font-semibold text-gray-700 ml-1">Objet</label>
+                    <!-- <label class="text-sm font-semibold text-gray-700 ml-1">Objet</label> -->
                     <select 
                         name="objet-demande" 
                         class="select select-bordered select-lg w-full focus:outline-secondaryTheme" 
@@ -40,8 +44,7 @@ import Layout from "../layouts/Layout.astro";
                     >
                         <option disabled selected value="">Objet de votre demande</option>
                         <option value="devis">Demande de devis</option>
-                        <option value="information">Demande d'information</option>
-                        <option value="reclamation">Réclamation</option>
+                        <option value="information">Demande d'information</option>  
                         <option value="autre">Autre...</option>
                     </select>
                 </div>

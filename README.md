@@ -50,9 +50,9 @@ All commands are run from the root of the project, from a terminal:
 5. Remplace simplement https://formspree.io/f/VOTRE_ID_ICI dans mon code par cette URL. LIGNE 25
 
 ## 👀 Mise en place du formulaire d'envoie de CV
-1. Rends-toi sur web3forms.com.
-2. Saisis ton adresse email professionnelle (ex: contact@proxiclean-services.fr).
-3. Tu vas recevoir immédiatement un mail contenant une Access Key (une suite de chiffres et de lettres). Garde-la précieusement.
+1. Créer un compte sur https://forminit.com/ avec le mail contact@proxiclean-services.fr
+2. Créer un formulaire avec le nom : Recrutement ProxiClean
+3. Récupérer l'URL. Sur le fichier rejoindre.astro, le mettre ligne 29 à la place du action=""
 
 
 ## Lignes à modifier

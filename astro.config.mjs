@@ -13,5 +13,5 @@ export default defineConfig({
 
   integrations: [sitemap()],
 
-  site: 'https://proxiclean-service.fr',
+  site: 'https://proxiclean-services.fr',
 });

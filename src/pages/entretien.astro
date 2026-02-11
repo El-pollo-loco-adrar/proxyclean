@@ -34,7 +34,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
             </div>
             <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
                 <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/200/300?random=1" alt="Image industrie">
+                    <img src="https://picsum.photos/800/300?random=1" alt="Image industrie">
                 </div>
             </div>
         </div>
@@ -58,16 +58,86 @@ import Breadcrumb from '../components/Breadcrumb.astro';
             </div>
             <div class="md:w-1/2 bg-gray-300 h-64 rounded-3xl overflow-hidden shadow-xl">
                 <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    <img src="https://picsum.photos/200/300?random=2" alt="Image logistique">
+                    <img src="https://picsum.photos/800/300?random=2" alt="Image logistique">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white">
+        <!-- TERTIAIRE-->
+    <section id="tertiaire" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">Confort & Image de marque</div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-title">Tertiaire</h2>
+                <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">Vos locaux reflètent votre image auprès de vos collaborateurs et visiteurs.</p>
+                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
+                    Proxi’Clean déploie une méthode d’entretien précise pour garantir confort, hygiène et qualité perçue au quotidien.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4 text-justify">Chaque prestation est pilotée pour assurer régularité et discrétion, avec un suivi mesurable grâce à notre démarche qualité.</p>
+                <div class="bg-gray-50 p-4 border-l-4 border-secondaryTheme italic text-gray-700">
+                    "Des espaces accueillants et une expérience professionnelle valorisée."
+                </div>
+            </div>
+            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <div class="w-full h-full flex items-center justify-center text-gray-400">
+                    <img src="https://picsum.photos/800/300?random=3" alt="Image tertiaire">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- DISTRIBUTION -->
+    <section id="distribution" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="md:w-1/2">
+                <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">Flux & Propreté constante</div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-title">Grande Distribution</h2>
+                <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">
+                    La propreté participe directement à l’expérience client et à la performance commerciale.</p>
+                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
+                    Nos équipes interviennent avec réactivité et méthode pour maintenir des surfaces irréprochables, même en période de forte affluence.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4 text-justify">Nous intégrons les contraintes horaires, les normes d’hygiène et les impératifs d’image propres au secteur.</p>
+                <div class="bg-white p-4 border-l-4 border-secondaryTheme italic text-gray-700 shadow-sm">
+                    "Un point de vente attractif, sécurisé et conforme aux  standards du secteur."
+                </div>
+            </div>
+            <div class="md:w-1/2 bg-gray-300 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <div class="w-full h-full flex items-center justify-center text-gray-500">
+                    <img src="https://picsum.photos/800/300?random=4" alt="Image distribution">
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- DATA CENTER-->
+    <section id="data" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">Milieu Critique & Haute Précision</div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-title">Data Center</h2>
+                <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">Dans un data center, la propreté est une exigence technique critique.</p>
+                <p class="text-gray-600 leading-relaxed mb-4 text-justify">
+                    Nous appliquons des protocoles spécifiques : dépoussiérage technique, nettoyage des planchers surélevés, intervention en zones sensibles et limitation stricte des particules.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4 text-justify">Nos équipes interviennent selon des procédures sécurisées, sans compromettre vos infrastructures.</p>
+                <div class="bg-gray-50 p-4 border-l-4 border-secondaryTheme italic text-gray-700">
+                    "Un environnement contrôlé qui protège vos équipements stratégiques."
+                </div>
+            </div>
+            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <div class="w-full h-full flex items-center justify-center text-gray-400">
+                    <img src="https://picsum.photos/800/300?random=5" alt="Image data center">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- TERTIAIRE -->
+                
                 <div id="tertiaire" class="p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow">
                     <h3 class="text-2xl font-bold text-primaryTheme mb-4">Tertiaire</h3>
                     <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">
@@ -83,7 +153,6 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                         Résultat : Des espaces accueillants et une expérience professionnelle valorisée.</p>
                 </div>
 
-                <!-- GRANDE DISTRIBUTION -->
                 <div id="distribution" class="p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow">
                     <h3 class="text-2xl font-bold text-primaryTheme mb-4">Grande distribution</h3>
                     <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">
@@ -99,7 +168,6 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                         Résultat : Un point de vente attractif, sécurisé et conforme aux  standards du secteur.</p>
                 </div>
 
-                <!-- DATA CENTER -->
                 <div id="data" class="p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow">
                     <h3 class="text-2xl font-bold text-primaryTheme mb-4">Data Center</h3>
                     <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">
@@ -116,7 +184,7 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="py-20 text-center bg-gray-50"> 
         <h2 class="text-3xl font-bold mb-8">Prêt à mettre en place votre plan d'entretien régulier ?</h2>
